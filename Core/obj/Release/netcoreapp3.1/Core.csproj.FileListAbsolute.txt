@@ -1,0 +1,8 @@
+C:\My Projects\NewsPortal\NewsPortal\Core\bin\Release\netcoreapp3.1\Core.deps.json
+C:\My Projects\NewsPortal\NewsPortal\Core\bin\Release\netcoreapp3.1\Core.dll
+C:\My Projects\NewsPortal\NewsPortal\Core\bin\Release\netcoreapp3.1\Core.pdb
+C:\My Projects\NewsPortal\NewsPortal\Core\obj\Release\netcoreapp3.1\Core.csprojAssemblyReference.cache
+C:\My Projects\NewsPortal\NewsPortal\Core\obj\Release\netcoreapp3.1\Core.AssemblyInfoInputs.cache
+C:\My Projects\NewsPortal\NewsPortal\Core\obj\Release\netcoreapp3.1\Core.AssemblyInfo.cs
+C:\My Projects\NewsPortal\NewsPortal\Core\obj\Release\netcoreapp3.1\Core.dll
+C:\My Projects\NewsPortal\NewsPortal\Core\obj\Release\netcoreapp3.1\Core.pdb

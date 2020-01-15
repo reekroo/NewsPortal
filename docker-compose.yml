@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+
+  bankservice:
+    image: ${DOCKER_REGISTRY-}bankservice
+    build:
+      context: .
+      dockerfile: BankService\Dockerfile
+
+  newsservice:
+    image: ${DOCKER_REGISTRY-}newsservice
+    build:
+      context: .
+      dockerfile: NewsService\Dockerfile
+
+  weatherservice:
+    image: ${DOCKER_REGISTRY-}weatherservice
+    build:
+      context: .
+      dockerfile: WeatherService\Dockerfile
+
+  worldnewsservice:
+    image: ${DOCKER_REGISTRY-}worldnewsservice
+    build:
+      context: .
+      dockerfile: WorldNewsService\Dockerfile

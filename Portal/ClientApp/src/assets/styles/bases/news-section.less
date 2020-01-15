@@ -1,0 +1,27 @@
+﻿@import "./constants/colors.less";
+@import "../bases/constants/media-width.less";
+
+.news-section {
+    margin: 0 0 5px 0;
+    border-bottom: 1px solid @default-grey-collor;
+
+
+    img {
+        max-width: 100%;
+        margin: 0 10px 10px 0;
+
+        /*@media all and (max-width: @default-small-width) {
+            max-width: 100%;
+            width: 100%;
+            margin: 0 0 10px 0;
+        }*/
+    }
+
+    > article {
+        margin: 0 0 5px 0;
+    }
+
+    &:last-child {
+        border-bottom: none;
+    }
+}

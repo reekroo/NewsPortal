@@ -1,0 +1,15 @@
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label>{{rate.Cur_Abbreviation}}</label>
+      <input type="text" [(ngModel)]="y" class="form-control" (change)="calcNacionalValue()" />
+    </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="form-group">
+      <label>BYN</label>
+      <input type="text" [(ngModel)]="x" class="form-control" (change)="calcCurrentValue()" />
+    </div>
+  </div>
+</div>

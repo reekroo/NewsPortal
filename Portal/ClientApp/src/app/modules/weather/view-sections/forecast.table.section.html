@@ -1,0 +1,33 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Tempetature</th>
+      <th>Humidity</th>
+      <th>Pressure</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <ng-container *ngFor="let f of forecast.list; let i = index;">
+
+      <tr style="background: rgba(54, 162, 235, 0.2)"
+          *ngIf="(i == 0) || (i > 0 && getDate(forecast.list[i-1].dt) != getDate(forecast.list[i].dt))">
+        <th colspan="5"
+            style="text-align: center; vertical-align: middle;">
+          {{getDate(f.dt)}}
+        </th>
+      </tr>
+
+      <tr>
+        <td><b>{{getTime(f.dt)}}</b></td>
+        <td>
+          <img src="https://openweathermap.org/img/w/{{getIcon(f.weather)}}.png" />
+          {{getTemp(f.main.temp)}}℃
+        </td>
+        <td>{{f.main.humidity}}%</td>
+        <td>{{f.main.pressure}}hpa</td>
+      </tr>
+    </ng-container>
+  </tbody>
+</table>

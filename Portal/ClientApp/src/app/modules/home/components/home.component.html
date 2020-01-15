@@ -1,0 +1,40 @@
+<div class="bank-container container">
+
+  <div class="row">
+    <div class="col-sm-4 currencies" *ngFor="let rate of homeViewModel.currentRates">
+      <h2>
+        {{rate.Cur_Abbreviation}}
+        <small>{{rate.Cur_OfficialRate}}</small>
+      </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <h2>Last news</h2>
+      <div class="card">
+        <div class="card-body">
+          <specific-news-section [news]="homeViewModel.lastBelNews"></specific-news-section>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+          <h4>refinancing rate</h4>
+          <div>
+            {{homeViewModel.refinancingRate.Value}}%
+            <small> ({{homeViewModel.refinancingRate.Date}})</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <weather-section [weather]="homeViewModel.weather"></weather-section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

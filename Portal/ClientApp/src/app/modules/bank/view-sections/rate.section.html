@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-sm-4"><h2>{{rate.Cur_Abbreviation}}</h2></div>
+  <div class="col-sm-4"><h2>{{rate.Cur_Scale}}</h2></div>
+  <div class="col-sm-4">
+    <h2>
+      {{rate.Cur_OfficialRate}}
+      <small>
+        <span [className]="delta == 0.0 ? '' : isUpper ? 'fa fa-arrow-up upper-class' : 'fa fa-arrow-down lower-class'"></span>
+        <span [className]="delta == 0.0 ? '' : isUpper ? 'upper-class' : 'lower-class'"> {{delta}} </span>
+      </small>
+    </h2>
+  </div>
+</div>

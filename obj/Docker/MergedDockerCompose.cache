@@ -1,0 +1,62 @@
+services:
+  bankservice:
+    build:
+      context: C:\My Projects\NewsPortal\NewsPortal
+      dockerfile: BankService\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: bankservice
+    ports:
+    - published: 52598
+      target: 80
+    - published: 44381
+      target: 443
+    volumes:
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  newsservice:
+    build:
+      context: C:\My Projects\NewsPortal\NewsPortal
+      dockerfile: NewsService\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: newsservice
+    ports:
+    - published: 52691
+      target: 80
+    - published: 44306
+      target: 443
+    volumes:
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  weatherservice:
+    build:
+      context: C:\My Projects\NewsPortal\NewsPortal
+      dockerfile: WeatherService\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: weatherservice
+    ports:
+    - published: 50810
+      target: 80
+    - published: 44384
+      target: 443
+    volumes:
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+  worldnewsservice:
+    build:
+      context: C:\My Projects\NewsPortal\NewsPortal
+      dockerfile: WorldNewsService\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: worldnewsservice
+    ports:
+    - published: 60940
+      target: 80
+    - published: 44357
+      target: 443
+    volumes:
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+version: '3.4'
