@@ -2,26 +2,36 @@ version: '3.4'
 
 services:
 
+  portal_2.0:
+    image: ${DOCKER_REGISTRY-}portal20
+    build:
+      context: .
+      dockerfile: Portal_2.0/Dockerfile
+
   bankservice:
     image: ${DOCKER_REGISTRY-}bankservice
     build:
       context: .
-      dockerfile: BankService\Dockerfile
+      dockerfile: BankService/Dockerfile
+
 
   newsservice:
     image: ${DOCKER_REGISTRY-}newsservice
     build:
       context: .
-      dockerfile: NewsService\Dockerfile
+      dockerfile: NewsService/Dockerfile
+
 
   weatherservice:
     image: ${DOCKER_REGISTRY-}weatherservice
     build:
       context: .
-      dockerfile: WeatherService\Dockerfile
+      dockerfile: WeatherService/Dockerfile
+
 
   worldnewsservice:
     image: ${DOCKER_REGISTRY-}worldnewsservice
     build:
       context: .
-      dockerfile: WorldNewsService\Dockerfile
+      dockerfile: WorldNewsService/Dockerfile
+

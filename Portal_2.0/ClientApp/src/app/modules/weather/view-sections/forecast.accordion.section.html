@@ -1,0 +1,49 @@
+<div id="accordion">
+
+  <div class="card" *ngFor="let item of forecast; let i = index;">
+    <div class="card-header" [attr.id]="'heading' + i">
+      <h5 class="mb-0">
+        <button data-toggle="collapse"
+                [attr.class]="i == 0 ? 'btn btn-link' : 'btn btn-link collapsed'"
+                [attr.data-target]="'#collapse' + i"
+                [attr.aria-controls]="'collapse' + i"
+                [attr.aria-expanded]="i == 0 ? 'true' : 'false'">
+          <span>{{getDay(item[0].date)}} - {{getDate(item[0].date)}} - </span>
+          <img src="https://openweathermap.org/img/w/{{getIcon(item[0].weather)}}.png" />
+        </button>
+      </h5>
+    </div>
+
+    <div data-parent="#accordion"
+         [attr.class]="i == 0 ? 'collapse show' : 'collapse'"
+         [attr.id]="'collapse' + i"
+         [attr.aria-labelledby]="'heading' + i">
+      <div class="card-body">
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Tempetature</th>
+              <th>Humidity</th>
+              <th>Pressure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let f of item;">
+              <td><b>{{getTime(f.date)}}</b></td>
+              <td>
+                <img src="https://openweathermap.org/img/w/{{getIcon(f.weather)}}.png" />
+                {{getTemperature(f.rootInfo.temperature)}}℃
+              </td>
+              <td>{{f.rootInfo.humidity}}%</td>
+              <td>{{f.rootInfo.pressure}}hpa</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </div>
+  </div>
+
+</div>

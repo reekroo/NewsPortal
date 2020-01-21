@@ -2144,11 +2144,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\My Projects\\NewsPortal\\NewsPortal\\NewsService\\NewsService.csproj",
+      "projectUniqueName": "C:\\GIT - My Projects\\NewsPortal\\NewsService\\NewsService.csproj",
       "projectName": "NewsService",
-      "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\NewsService\\NewsService.csproj",
+      "projectPath": "C:\\GIT - My Projects\\NewsPortal\\NewsService\\NewsService.csproj",
       "packagesPath": "C:\\Users\\Pavel_Davidouski\\.nuget\\packages\\",
-      "outputPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\NewsService\\obj\\",
+      "outputPath": "C:\\GIT - My Projects\\NewsPortal\\NewsService\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -2168,8 +2168,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj": {
-              "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj"
+            "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj": {
+              "projectPath": "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj"
             }
           }
         }
@@ -2210,7 +2210,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

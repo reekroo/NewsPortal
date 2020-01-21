@@ -1,8 +1,8 @@
 services:
   bankservice:
     build:
-      context: C:\My Projects\NewsPortal\NewsPortal
-      dockerfile: BankService\Dockerfile
+      context: C:\GIT - My Projects\NewsPortal
+      dockerfile: BankService/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: bankservice
@@ -12,12 +12,12 @@ services:
     - published: 44381
       target: 443
     volumes:
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
   newsservice:
     build:
-      context: C:\My Projects\NewsPortal\NewsPortal
-      dockerfile: NewsService\Dockerfile
+      context: C:\GIT - My Projects\NewsPortal
+      dockerfile: NewsService/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: newsservice
@@ -27,12 +27,27 @@ services:
     - published: 44306
       target: 443
     volumes:
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+  portal_2.0:
+    build:
+      context: C:\GIT - My Projects\NewsPortal
+      dockerfile: Portal_2.0/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: portal20
+    ports:
+    - published: 54948
+      target: 80
+    - published: 44334
+      target: 443
+    volumes:
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
   weatherservice:
     build:
-      context: C:\My Projects\NewsPortal\NewsPortal
-      dockerfile: WeatherService\Dockerfile
+      context: C:\GIT - My Projects\NewsPortal
+      dockerfile: WeatherService/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: weatherservice
@@ -42,12 +57,12 @@ services:
     - published: 44384
       target: 443
     volumes:
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
   worldnewsservice:
     build:
-      context: C:\My Projects\NewsPortal\NewsPortal
-      dockerfile: WorldNewsService\Dockerfile
+      context: C:\GIT - My Projects\NewsPortal
+      dockerfile: WorldNewsService/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development
     image: worldnewsservice
@@ -57,6 +72,6 @@ services:
     - published: 44357
       target: 443
     volumes:
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:C:\Users\ContainerUser\AppData\Roaming\ASP.NET\Https:ro
-    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:C:\Users\ContainerUser\AppData\Roaming\Microsoft\UserSecrets:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\Pavel_Davidouski\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
 version: '3.4'

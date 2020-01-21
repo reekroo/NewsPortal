@@ -1,0 +1,80 @@
+
+<div class="row">
+  <div class="col-sm-12">
+    <h2>{{title}}</h2>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-12 news">
+
+    <div class="card">
+      <div class="card-body">
+
+        <div class="row">
+          <ng-container *ngFor="let row of news; let i = index">
+
+            <ng-container *ngIf="i==0">
+              <ng-container *ngFor="let n of row.items; let y = index">
+
+                <div class="col-sm-6 center-top-news" *ngIf="y==0">
+                  <article>
+                    <img src="{{n.urlToImage}}" alt="(no image)" class="img-fluid" />
+                    <h6><a href="{{n.url}}" target="_blank" [innerHTML]="n.title"></a></h6>
+                    <p [innerHTML]="n.description"></p>
+                  </article>
+                </div>
+
+              </ng-container>
+            </ng-container>
+
+          </ng-container>
+
+          <div class="col-sm-6 right-top-news">
+
+            <ng-container *ngFor="let row of news; let i = index">
+
+              <ng-container *ngIf="i==0">
+                <ng-container *ngFor="let n of row.items; let y = index">
+
+                  <article class="clearfix" *ngIf="y > 0">
+                    <img src="{{n.urlToImage}}" alt="(no image)" class="img-fluid rounded float-left" />
+                    <h6><a href="{{n.url}}" target="_blank" [innerHTML]="n.title"></a></h6>
+                  </article>
+
+                </ng-container>
+              </ng-container>
+
+            </ng-container>
+
+          </div>
+        </div>
+
+        <div class="line"></div>
+        <button class="btn btn-primary" (click)="onClick()">{{textBtn}}</button>
+
+        <div [hidden]="!section">
+          <div #target></div>
+
+          <ng-container *ngFor="let row of news; let i = index">
+            <ng-container *ngIf="i>0">
+              <div class="row">
+                <section class="col-sm-3" *ngFor="let n of row.items; let y = index">
+                  <article>
+                    <img src="{{n.urlToImage}}" alt="(no image)" class="img-fluid" />
+                    <h6><a href="{{n.url}}" target="_blank" [innerHTML]="n.title"></a></h6>
+                    <p [innerHTML]="n.description"></p>
+                  </article>
+                </section>
+              </div>
+            </ng-container>
+          </ng-container>
+
+          <button (click)="scroll(target)" class="btn btn-primary btn-up fa fa-chevron-up"></button>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>

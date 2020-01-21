@@ -23,8 +23,8 @@ namespace WeatherService.Controllers
 		public async Task<ActionResult> Get(string city, string countryCode) => 
 			await GetMappedResult<CityForecast, MappedCityForecast>(string.Format("{0}&q={1},{2}", WeatherUrls.Forecast, city, countryCode));
 
-		[HttpGet("{lat:int}/{lon:int}")]
-		public async Task<ActionResult> Get(int lat, int lon) => 
+		[HttpGet("{lat:double}/{lon:double}")]
+		public async Task<ActionResult> Get(double lat, double lon) => 
 			await GetMappedResult<CityForecast, MappedCityForecast>(string.Format("{0}&lat={1}&lon={2}", WeatherUrls.Forecast, lat, lon));
 	}
 }

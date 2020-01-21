@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\My Projects\\NewsPortal\\NewsPortal\\BankService\\BankService.csproj": {}
+    "C:\\GIT - My Projects\\NewsPortal\\BankService\\BankService.csproj": {}
   },
   "projects": {
-    "C:\\My Projects\\NewsPortal\\NewsPortal\\BankService\\BankService.csproj": {
+    "C:\\GIT - My Projects\\NewsPortal\\BankService\\BankService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My Projects\\NewsPortal\\NewsPortal\\BankService\\BankService.csproj",
+        "projectUniqueName": "C:\\GIT - My Projects\\NewsPortal\\BankService\\BankService.csproj",
         "projectName": "BankService",
-        "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\BankService\\BankService.csproj",
+        "projectPath": "C:\\GIT - My Projects\\NewsPortal\\BankService\\BankService.csproj",
         "packagesPath": "C:\\Users\\Pavel_Davidouski\\.nuget\\packages\\",
-        "outputPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\BankService\\obj\\",
+        "outputPath": "C:\\GIT - My Projects\\NewsPortal\\BankService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -31,8 +31,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj": {
-                "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj"
+              "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj": {
+                "projectPath": "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj"
               }
             }
           }
@@ -81,18 +81,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj": {
+    "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj",
+        "projectPath": "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Pavel_Davidouski\\.nuget\\packages\\",
-        "outputPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\obj\\",
+        "outputPath": "C:\\GIT - My Projects\\NewsPortal\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -147,7 +147,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

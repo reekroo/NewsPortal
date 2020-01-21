@@ -22,3 +22,27 @@ C:\My Projects\NewsPortal\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\Weat
 C:\My Projects\NewsPortal\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.csproj.CopyComplete
 C:\My Projects\NewsPortal\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.dll
 C:\My Projects\NewsPortal\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.pdb
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\appsettings.json
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\WeatherService.exe
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\WeatherService.deps.json
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\WeatherService.runtimeconfig.json
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\WeatherService.runtimeconfig.dev.json
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\WeatherService.dll
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\WeatherService.pdb
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\HtmlAgilityPack.NetCore.dll
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\Core.dll
+C:\GIT - My Projects\NewsPortal\WeatherService\bin\Debug\netcoreapp3.1\Core.pdb
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.csprojAssemblyReference.cache
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\staticwebassets\WeatherService.StaticWebAssets.Manifest.cache
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\staticwebassets\WeatherService.StaticWebAssets.xml
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.MvcApplicationPartsAssemblyInfo.cache
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.AssemblyInfoInputs.cache
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.AssemblyInfo.cs
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.RazorTargetAssemblyInfo.cache
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.csproj.CopyComplete
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.dll
+C:\GIT - My Projects\NewsPortal\WeatherService\obj\Debug\netcoreapp3.1\WeatherService.pdb

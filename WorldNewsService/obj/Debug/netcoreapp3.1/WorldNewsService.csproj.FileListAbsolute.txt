@@ -22,3 +22,27 @@ C:\My Projects\NewsPortal\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\Wo
 C:\My Projects\NewsPortal\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.dll
 C:\My Projects\NewsPortal\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.pdb
 C:\My Projects\NewsPortal\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.csprojAssemblyReference.cache
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\appsettings.json
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\WorldNewsService.exe
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\WorldNewsService.deps.json
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\WorldNewsService.runtimeconfig.json
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\WorldNewsService.runtimeconfig.dev.json
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\WorldNewsService.dll
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\WorldNewsService.pdb
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\HtmlAgilityPack.NetCore.dll
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\Core.dll
+C:\GIT - My Projects\NewsPortal\WorldNewsService\bin\Debug\netcoreapp3.1\Core.pdb
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.csprojAssemblyReference.cache
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\staticwebassets\WorldNewsService.StaticWebAssets.Manifest.cache
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\staticwebassets\WorldNewsService.StaticWebAssets.xml
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.MvcApplicationPartsAssemblyInfo.cache
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.AssemblyInfoInputs.cache
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.AssemblyInfo.cs
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.RazorTargetAssemblyInfo.cache
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.csproj.CopyComplete
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.dll
+C:\GIT - My Projects\NewsPortal\WorldNewsService\obj\Debug\netcoreapp3.1\WorldNewsService.pdb

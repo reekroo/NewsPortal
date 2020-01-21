@@ -22,3 +22,27 @@ C:\My Projects\NewsPortal\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsSer
 C:\My Projects\NewsPortal\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.csproj.CopyComplete
 C:\My Projects\NewsPortal\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.dll
 C:\My Projects\NewsPortal\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.pdb
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\appsettings.json
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\NewsService.exe
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\NewsService.deps.json
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\NewsService.runtimeconfig.json
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\NewsService.runtimeconfig.dev.json
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\NewsService.dll
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\NewsService.pdb
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\HtmlAgilityPack.NetCore.dll
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\Core.dll
+C:\GIT - My Projects\NewsPortal\NewsService\bin\Debug\netcoreapp3.1\Core.pdb
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.csprojAssemblyReference.cache
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\staticwebassets\NewsService.StaticWebAssets.Manifest.cache
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\staticwebassets\NewsService.StaticWebAssets.xml
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.MvcApplicationPartsAssemblyInfo.cache
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.AssemblyInfoInputs.cache
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.AssemblyInfo.cs
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.RazorTargetAssemblyInfo.cache
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.csproj.CopyComplete
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.dll
+C:\GIT - My Projects\NewsPortal\NewsService\obj\Debug\netcoreapp3.1\NewsService.pdb

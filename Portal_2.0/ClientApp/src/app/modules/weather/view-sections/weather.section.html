@@ -1,0 +1,47 @@
+
+<h4>weather in {{weather.name}}</h4>
+
+<div>
+  <h2>
+    <img src="https://openweathermap.org/img/w/{{getIcon(weather.weather)}}.png" />
+    <span>{{getTemperature(weather.rootInfo.temperature)}}℃</span>
+    <small>({{getTemperature(weather.rootInfo.temperatureFeelsLike)}}℃)</small>
+  </h2>
+</div>
+
+<table class="table table-striped">
+  <tbody>
+    <tr>
+      <td>Temp Min</td>
+      <td>{{getTemperature(weather.rootInfo.temperatureMin)}}℃</td>
+    </tr>
+    <tr>
+      <td>Temp Max</td>
+      <td>{{getTemperature(weather.rootInfo.temperatureMax)}}℃</td>
+    </tr>
+    <tr>
+      <td>Wind speed</td>
+      <td>{{weather.wind.speed}}m/s</td>
+    </tr>
+    <tr>
+      <td>Cloudiness</td>
+      <td>{{getDescription(weather.weather)}}</td>
+    </tr>
+    <tr>
+      <td>Pressure</td>
+      <td>{{weather.rootInfo.pressure}}hpa</td>
+    </tr>
+    <tr>
+      <td>Humidity</td>
+      <td>{{weather.rootInfo.humidity}}%</td>
+    </tr>
+    <tr>
+      <td>Sunrise</td>
+      <td>{{getTime(weather.rootInfo.sunrise)}}</td>
+    </tr>
+    <tr>
+      <td>Sunset</td>
+      <td>{{getTime(weather.rootInfo.sunset)}}</td>
+    </tr>
+  </tbody>
+</table>

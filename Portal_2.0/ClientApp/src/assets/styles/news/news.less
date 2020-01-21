@@ -1,0 +1,57 @@
+﻿@import "../bases/constants/colors.less";
+@import "../bases/constants/media-width.less";
+
+@import "../bases/mixins/static-grid-section.less";
+
+.news-container {
+    
+    img {
+        padding: 0
+    }
+
+    a {
+        cursor: pointer
+    }
+
+    .channels {
+        padding: 0;
+
+        aside {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            section {
+                padding: 20px;
+                color: @default-aside-text-color;
+                background-color: @default-aside-background-color;
+                border-bottom: 1px solid @default-aside-border-color;
+                border-left: 10px solid transparent;
+                cursor: pointer;
+                font: bold;
+
+                &:hover {
+                    color: @default-aside-text-color-hover;
+                    background-color: @default-aside-background-color-hover;
+                }
+            }
+        }
+
+        @media all and (max-width: @default-small-width) {
+            height: 30vh;
+        }
+
+        .static-section();
+    }
+
+    .news {
+        padding: 0 20px;
+        
+        .static-section();
+    }
+
+    .alert {
+        margin: 20px;
+        text-align: center
+    }
+}

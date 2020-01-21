@@ -1,0 +1,43 @@
+<div class="bank-container container">
+
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Weather forecast</h2>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-sm-4">
+      <div class="card">
+        <div class="card-body">
+
+          <weather-section [weather]="weatherViewModel.weather"></weather-section>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+          <chart-form [inputData]="chart"></chart-form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="card">
+        <div class="card-body">
+
+          <forecast-accordion-section [forecast]="forecast"></forecast-accordion-section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -64,7 +64,7 @@ export class WeatherComponent implements OnInit, IChart {
     return (new Date(unixUtcTime * 1000).toLocaleDateString());
   }
 
-  public getTemp(temp: number): number {
+  public getTemperature(temp: number): number {
 
     return Number((temp - 273).toFixed(2));
   }
@@ -100,7 +100,7 @@ export class WeatherComponent implements OnInit, IChart {
     for (var i = 0; i < array.length; i++) {
 
       labels.push(this.getDate(array[i].dt));
-      temperature.push(this.getTemp(array[i].main.temp));
+      temperature.push(this.getTemperature(array[i].main.temp));
     }
 
     let result = {

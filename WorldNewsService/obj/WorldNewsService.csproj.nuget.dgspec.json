@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\My Projects\\NewsPortal\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj": {}
+    "C:\\GIT - My Projects\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj": {}
   },
   "projects": {
-    "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj": {
+    "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj",
+        "projectPath": "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\Pavel_Davidouski\\.nuget\\packages\\",
-        "outputPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\obj\\",
+        "outputPath": "C:\\GIT - My Projects\\NewsPortal\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -66,18 +66,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\My Projects\\NewsPortal\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj": {
+    "C:\\GIT - My Projects\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\My Projects\\NewsPortal\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj",
+        "projectUniqueName": "C:\\GIT - My Projects\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj",
         "projectName": "WorldNewsService",
-        "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj",
+        "projectPath": "C:\\GIT - My Projects\\NewsPortal\\WorldNewsService\\WorldNewsService.csproj",
         "packagesPath": "C:\\Users\\Pavel_Davidouski\\.nuget\\packages\\",
-        "outputPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\WorldNewsService\\obj\\",
+        "outputPath": "C:\\GIT - My Projects\\NewsPortal\\WorldNewsService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -97,8 +97,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj": {
-                "projectPath": "C:\\My Projects\\NewsPortal\\NewsPortal\\Core\\Core.csproj"
+              "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj": {
+                "projectPath": "C:\\GIT - My Projects\\NewsPortal\\Core\\Core.csproj"
               }
             }
           }
@@ -139,7 +139,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
