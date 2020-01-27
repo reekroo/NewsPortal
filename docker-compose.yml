@@ -14,13 +14,11 @@ services:
       context: .
       dockerfile: BankService/Dockerfile
 
-
   newsservice:
     image: ${DOCKER_REGISTRY-}newsservice
     build:
       context: .
       dockerfile: NewsService/Dockerfile
-
 
   weatherservice:
     image: ${DOCKER_REGISTRY-}weatherservice
@@ -28,10 +26,8 @@ services:
       context: .
       dockerfile: WeatherService/Dockerfile
 
-
   worldnewsservice:
     image: ${DOCKER_REGISTRY-}worldnewsservice
     build:
       context: .
       dockerfile: WorldNewsService/Dockerfile
-

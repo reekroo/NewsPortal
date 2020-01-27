@@ -1,13 +1,13 @@
 import { Currency } from '../../../models/currency.model';
-import { Rate } from '../../../models/rate.model';
+import { CurrencyRate } from '../../../models/currency.rate.model';
 
 export class CurrencyViewModel {
 
   constructor(
     public currencies?: Currency[],
-    public rate?: Rate,
-    public rates?: Rate[],
-    public monthRates?: Rate[],
+    public rate?: CurrencyRate,
+    public rates?: CurrencyRate[],
+    public monthRates?: CurrencyRate[],
     public chartData?: Object,
     public showDefaultSection?: boolean,
     public isUpper?: boolean,

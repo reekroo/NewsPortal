@@ -11,20 +11,19 @@ services:
         com.microsoft.visual-studio.project-name: "BankService"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_bankservice$
     volumes:
       - C:\GIT - My Projects\NewsPortal\BankService:/app
       - C:\GIT - My Projects\NewsPortal:/src
       - C:\Users\Pavel_Davidouski\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Pavel_Davidouski\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+#$nuget_volume_mapping_bankservice$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"bin/Debug/netcoreapp3.1/BankService.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_bankservice$ \"bin/Debug/netcoreapp3.1/BankService.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -38,20 +37,19 @@ services:
         com.microsoft.visual-studio.project-name: "NewsService"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_newsservice$
     volumes:
       - C:\GIT - My Projects\NewsPortal\NewsService:/app
       - C:\GIT - My Projects\NewsPortal:/src
       - C:\Users\Pavel_Davidouski\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Pavel_Davidouski\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+#$nuget_volume_mapping_newsservice$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"bin/Debug/netcoreapp3.1/NewsService.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_newsservice$ \"bin/Debug/netcoreapp3.1/NewsService.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -66,20 +64,19 @@ services:
         com.microsoft.visual-studio.project-name: "Portal_2.0"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_portal_2.0$
     volumes:
       - C:\GIT - My Projects\NewsPortal\Portal_2.0:/app
       - C:\GIT - My Projects\NewsPortal:/src
       - C:\Users\Pavel_Davidouski\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Pavel_Davidouski\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+#$nuget_volume_mapping_portal_2.0$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"bin/Debug/netcoreapp3.1/Portal_2.0.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_portal_2.0$ \"bin/Debug/netcoreapp3.1/Portal_2.0.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -94,20 +91,19 @@ services:
         com.microsoft.visual-studio.project-name: "WeatherService"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_weatherservice$
     volumes:
       - C:\GIT - My Projects\NewsPortal\WeatherService:/app
       - C:\GIT - My Projects\NewsPortal:/src
       - C:\Users\Pavel_Davidouski\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Pavel_Davidouski\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+#$nuget_volume_mapping_weatherservice$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"bin/Debug/netcoreapp3.1/WeatherService.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_weatherservice$ \"bin/Debug/netcoreapp3.1/WeatherService.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
@@ -122,20 +118,19 @@ services:
         com.microsoft.visual-studio.project-name: "WorldNewsService"
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_worldnewsservice$
     volumes:
       - C:\GIT - My Projects\NewsPortal\WorldNewsService:/app
       - C:\GIT - My Projects\NewsPortal:/src
       - C:\Users\Pavel_Davidouski\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\Pavel_Davidouski\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+#$nuget_volume_mapping_worldnewsservice$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"bin/Debug/netcoreapp3.1/WorldNewsService.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_worldnewsservice$ \"bin/Debug/netcoreapp3.1/WorldNewsService.dll\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true

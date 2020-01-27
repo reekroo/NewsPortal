@@ -4,7 +4,7 @@ import { RouterModule, Routes } from "@angular/router";
 //import { HomeModule } from './modules/home/home.module';
 import { NewsModule } from './modules/news/news.module';
 import { BankModule } from './modules/bank/bank.module';
-//import { NaturalResourcesModule } from './modules/natural-resources/natural.resources.module';
+import { NaturalResourcesModule } from './modules/natural-resources/natural.resources.module';
 import { WeatherModule } from './modules/weather/weather.module';
 
 const appRoutes: Routes = [
@@ -14,7 +14,7 @@ const appRoutes: Routes = [
   //{ path: 'index', loadChildren: () => HomeModule },
   { path: 'news', loadChildren: () => NewsModule },
   { path: 'bank', loadChildren: () => BankModule },
-  //{ path: 'natural-resources', loadChildren: () => NaturalResourcesModule },
+  { path: 'natural-resources', loadChildren: () => NaturalResourcesModule },
   { path: 'weather', loadChildren: () => WeatherModule },
 ];
 

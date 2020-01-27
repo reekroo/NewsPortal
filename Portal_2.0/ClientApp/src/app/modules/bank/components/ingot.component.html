@@ -1,7 +1,9 @@
 <div class="bank-container container-fluid">
 
   <nav class="nav">
-    <a class="nav-link" *ngFor="let metal of ingotViewModel.metals"><span id="{{metal.Id}}" (click)="getRate(metal.Id)">{{metal.NameEng}}</span></a>
+    <a class="nav-link" *ngFor="let metal of ingotViewModel.metals">
+      <span id="{{metal.id}}" (click)="getRate(metal.id)">{{metal.name}}</span>
+    </a>
   </nav>
 
   <div class="row" *ngIf="ingotViewModel.ingotsRate && ingotViewModel.ingotsRate.length > 0">
@@ -9,7 +11,7 @@
       <h2>Current rate</h2>
       <div class="card">
         <div class="card-body">
-          <metal-section [metalRates]="ingotViewModel.ingotsRate"></metal-section>
+          <ingot-price-section [ingotPrices]="ingotViewModel.ingotsRate"></ingot-price-section>
         </div>
       </div>
     </div>
@@ -23,9 +25,9 @@
       <div class="btn-group">
         <button class="btn btn-light" type="button"
                 *ngFor="let ingot of ingotViewModel.ingotsRate;let myIndex = index"
-                (click)="getChart(ingot.MetalID, myIndex)"
+                (click)="getChart(ingot.metalId, myIndex)"
                 [class.active]="ingotViewModel.selectedGramIndex === myIndex">
-          {{ingot.Nominal}}
+          {{ingot.nominal}}
         </button>
       </div>
 
@@ -37,5 +39,5 @@
     </div>
   </div>
 
-  <default-metal-section *ngIf="ingotViewModel.showDefault"></default-metal-section>
+  <default-ingot-section *ngIf="ingotViewModel.showDefault"></default-ingot-section>
 </div>

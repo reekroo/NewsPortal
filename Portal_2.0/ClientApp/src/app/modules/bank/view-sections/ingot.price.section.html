@@ -1,0 +1,21 @@
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <td>Nominal</td>
+      <td>Banks Rubles</td>
+      <td>Certificate Rubles</td>
+      <td>Entities Rubles</td>
+      <td>One Gram Rate</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let r of ingotPrices">
+      <td>{{r?.nominal}}</td>
+      <td>{{r?.banksRubles}}</td>
+      <td>{{r?.certificateRubles}}</td>
+      <td>{{r?.entitiesRubles}}</td>
+      <td>{{(r?.entitiesRubles / r?.nominal).toFixed(5)}}</td>
+    </tr>
+  </tbody>
+</table>

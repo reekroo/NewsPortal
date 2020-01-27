@@ -1,0 +1,1 @@
+{"version":3,"file":"natural-gas-controller.js","sourceRoot":"","sources":["natural-gas-controller.ts"],"names":[],"mappings":";;;;;;;;;AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;AAO1C;IAEI;IAAgB,CAAC;IAFR,mBAAmB;QAL/B,SAAS,CAAC;YACP,WAAW,EAAE,+BAA+B;YAC5C,MAAM,EAAE,CAAC,OAAO,CAAC,mCAAmC,CAAC,CAAC;SACzD,CAAC;;OAEW,mBAAmB,CAG/B;IAAD,0BAAC;CAAA,AAHD,IAGC;SAHY,mBAAmB"}

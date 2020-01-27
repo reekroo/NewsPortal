@@ -1,5 +1,5 @@
 import { News } from "../../../models/news.model";
-import { Rate } from "../../../models/rate.model";
+import { CurrencyRate } from "../../../models/currency.rate.model";
 import { RefinancingRate } from "../../../models/refinancing.rate.model";
 import { Weather } from "../../../models/weather.model";
 
@@ -7,7 +7,7 @@ export class HomeViewModel {
 
   constructor(
     public lastBelNews?: News[],
-    public currentRates?: Rate[],
+    public currentRates?: CurrencyRate[],
     public refinancingRate?: RefinancingRate,
     public weather?: Weather
   ) {

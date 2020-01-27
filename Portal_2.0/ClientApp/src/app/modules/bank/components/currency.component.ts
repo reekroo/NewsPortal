@@ -6,7 +6,7 @@ import { BankService } from '../../../services/bank/data.bank.currencies.service
 import { IChart } from '../../../interfaces/chart.interface';
 
 import { Currency } from '../../../models/currency.model';
-import { Rate } from '../../../models/rate.model';
+import { CurrencyRate } from '../../../models/currency.rate.model';
 
 import { CurrencyViewModel } from '../view-models/currency.view.model';
 
@@ -39,7 +39,7 @@ export class CurrencyComponent implements OnInit, IChart {
     this.dataService.getCurrencies().subscribe((data: any) => {
 
       if (data) {
-        this.currencyView.currencies = (data as Currency[]).filter(r => this.validCurrncies.indexOf(r.Id) >= 0);
+        this.currencyView.currencies = (data as Currency[]).filter(r => this.validCurrncies.indexOf(r.id) >= 0);
       } else {
         this.currencyView.currencies = [];
       };
@@ -56,10 +56,10 @@ export class CurrencyComponent implements OnInit, IChart {
 
     combineLatest(a1$, a2$).subscribe(combinedResult => {
 
-      this.currencyView.rate = combinedResult[0] as Rate;
-      this.currencyView.rate.Date = new Date(this.currencyView.rate.Date).toLocaleDateString();
+      this.currencyView.rate = combinedResult[0] as CurrencyRate;
+      this.currencyView.rate.date = new Date(this.currencyView.rate.date).toLocaleDateString();
 
-      this.currencyView.delta = this.currencyView.rate.Cur_OfficialRate - (combinedResult[1] as Rate).Cur_OfficialRate;
+      this.currencyView.delta = this.currencyView.rate.officialRate - (combinedResult[1] as CurrencyRate).officialRate;
 
       this.currencyView.delta = Number((this.currencyView.delta).toFixed(5));
 
@@ -74,7 +74,7 @@ export class CurrencyComponent implements OnInit, IChart {
     date.setFullYear(date.getFullYear() - 1);
     let start = date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + (date.getDate());
 
-    this.dataService.getRateByPeriod(id, start, end).subscribe((data: Rate[]) => {
+    this.dataService.getRateByPeriod(id, start, end).subscribe((data: CurrencyRate[]) => {
 
       this.currencyView.chartData = this.addaptToChartData(data);
 
@@ -83,13 +83,13 @@ export class CurrencyComponent implements OnInit, IChart {
       previusMonthData.setDate(previusMonthData.getDate() - 2);
 
       this.currencyView.rates = data;
-      this.currencyView.monthRates = data.filter(x => new Date(x.Date) >= previusMonthData);
+      this.currencyView.monthRates = data.filter(x => new Date(x.date) >= previusMonthData);
     });
 
     this.currencyView.showDefaultSection = false;
   }
 
-  addaptToChartData(array: Rate[]): Object {
+  addaptToChartData(array: CurrencyRate[]): Object {
 
     if (!array) {
 
@@ -97,18 +97,18 @@ export class CurrencyComponent implements OnInit, IChart {
     }
 
     array = array.sort(function (a, b) {
-      var c = new Date(a.Date);
-      var d = new Date(b.Date);
+      var c = new Date(a.date);
+      var d = new Date(b.date);
       return c < d ? -1 : c > d ? 1 : 0;
-    }) as Rate[];
+    }) as CurrencyRate[];
 
     var labels = [];
     var data = [];
 
     for (var i = 0; i < array.length; i++) {
 
-      labels.push(new Date(array[i].Date).toLocaleDateString());
-      data.push(array[i].Cur_OfficialRate);
+      labels.push(new Date(array[i].date).toLocaleDateString());
+      data.push(array[i].officialRate);
     }
 
     let result = {

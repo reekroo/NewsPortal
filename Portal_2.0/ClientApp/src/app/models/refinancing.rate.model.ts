@@ -1,6 +1,6 @@
 export class RefinancingRate {
   constructor(
-    public Date?: string,
-    public Value?: number
+    public date?: string,
+    public value?: number
   ) { }
 }

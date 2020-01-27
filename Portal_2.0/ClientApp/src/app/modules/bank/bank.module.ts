@@ -9,13 +9,13 @@ import { CurrencyComponent } from './components/currency.component';
 import { MetalComponent } from './components/ingot.component';
 import { RefinancingComponent } from './components/refinancing.rate.component';
 
-import { MonthRateTableComponent } from './view-sections/month.rates.table.section';
-import { RateSectionComponent } from './view-sections/rate.section';
-import { ConvertorSectionComponent } from './view-sections/rate.converter.section';
-import { DefaultRatesComponent } from './view-sections/default.rates.section';
+import { MonthRateTableComponent } from './view-sections/currency.month.rates.table.section';
+import { RateSectionComponent } from './view-sections/currency.rate.section';
+import { ConvertorSectionComponent } from './view-sections/currency.rate.converter.section';
+import { DefaultRatesComponent } from './view-sections/default.currency.rates.section';
 
 import { DefaultMetalRatesComponent } from './view-sections/default.ingots.section';
-import { MetalRatesComponent } from './view-sections/ingot.section';
+import { IngotPriceComponent } from './view-sections/ingot.price.section';
 
 import { RefinancingRateComponent } from './view-sections/refinancing.rate.section';
 import { RefinancingRatesComponent } from './view-sections/refinancing.rates.section';
@@ -32,7 +32,7 @@ import { ChartComponent } from '../../bases/base.chart.component';
   declarations: [
 
     CurrencyComponent, MonthRateTableComponent, RateSectionComponent, ConvertorSectionComponent, DefaultRatesComponent,
-    MetalComponent, DefaultMetalRatesComponent, MetalRatesComponent,
+    MetalComponent, DefaultMetalRatesComponent, IngotPriceComponent,
     RefinancingComponent, RefinancingRateComponent, RefinancingRatesComponent,
     ChartComponent
   ]

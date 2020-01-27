@@ -25,14 +25,14 @@ namespace BankService.Controllers
 
 		[HttpGet("{id:int}")]
 		public async Task<ActionResult> Get(int id) => 
-			await GetMappedResult<Currency, MappedCurrency>(BankUrls.Currencies + id + "?ParamMode=0");
+			await GetMappedResult<CurrencyRate, MappedCurrencyRate>(BankUrls.CurrencyRate + id + "?ParamMode=0");
 
 		[HttpGet("{id:int}/{start}/{end}")]
 		public async Task<ActionResult> Get(int id, string start, string end) =>
-			await GetMappedResult<Currency, MappedCurrency>(BankUrls.Currencies + id + "?startDate=" + start + "&endDate=" + end);
+			await GetMappedResult<List<CurrencyRate>, List<MappedCurrencyRate>>(BankUrls.CurrencyDynamicRate + id + "?startDate=" + start + "&endDate=" + end);
 
 		[HttpGet("{id:int}/{date}")]
 		public async Task<ActionResult> Get(int id, string date) =>
-			await GetMappedResult<Currency, MappedCurrency>(BankUrls.Currencies + id + "?ParamMode=0&onDate=" + date);
+			await GetMappedResult<CurrencyRate, MappedCurrencyRate>(BankUrls.CurrencyRate + id + "?ParamMode=0&onDate=" + date);
 	}
 }

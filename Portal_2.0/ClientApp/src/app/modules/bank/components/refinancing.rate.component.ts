@@ -33,7 +33,7 @@ export class RefinancingComponent implements OnInit, IChart {
 
       this.refinancingRateViewModel.refinancingRate = data[0] as RefinancingRate;
 
-      this.refinancingRateViewModel.refinancingRate.Date = new Date(this.refinancingRateViewModel.refinancingRate.Date).toLocaleDateString();
+      this.refinancingRateViewModel.refinancingRate.date = new Date(this.refinancingRateViewModel.refinancingRate.date).toLocaleDateString();
     });
   }
 
@@ -54,8 +54,8 @@ export class RefinancingComponent implements OnInit, IChart {
     }
 
     array = array.sort(function (a, b) {
-      var c = new Date(a.Date);
-      var d = new Date(b.Date);
+      var c = new Date(a.date);
+      var d = new Date(b.date);
       return c < d ? -1 : c > d ? 1 : 0;
     }) as RefinancingRate[];
 
@@ -64,8 +64,8 @@ export class RefinancingComponent implements OnInit, IChart {
 
     for (var i = 0; i < array.length; i++) {
 
-      labels.push(new Date(array[i].Date).toLocaleDateString());
-      data.push(array[i].Value);
+      labels.push(new Date(array[i].date).toLocaleDateString());
+      data.push(array[i].value);
     }
 
     let result = {

@@ -93,7 +93,7 @@ export class HomeComponent implements OnInit {
     this.refinancingRate.getRefinancingRate(new Date()).subscribe((data: RefinancingRate[]) => {
 
       this.homeViewModel.refinancingRate = data[0];
-      this.homeViewModel.refinancingRate.Date = new Date(this.homeViewModel.refinancingRate.Date).toLocaleDateString();
+      this.homeViewModel.refinancingRate.date = new Date(this.homeViewModel.refinancingRate.date).toLocaleDateString();
     });
   }
 

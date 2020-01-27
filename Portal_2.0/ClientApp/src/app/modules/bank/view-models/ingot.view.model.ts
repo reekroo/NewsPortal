@@ -1,12 +1,13 @@
-import { Metal } from '../../../models/metal.model';
 import { Ingot } from '../../../models/ingot.model';
+import { IngotPrice } from '../../../models/ingot.price.model';
 
 
 export class IngotViewModel {
 
   constructor(
-    public metals?: Metal[],
-    public ingotsRate?: Ingot[],
+    public metals?: Ingot[],
+    public ingotsRate?: IngotPrice[],
+
     public chartData?: Object,
     public showDefault?: boolean,
     public selectedGramIndex?: number

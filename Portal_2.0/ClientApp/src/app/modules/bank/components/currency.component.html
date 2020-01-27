@@ -4,8 +4,8 @@
     <div class="col-sm-3 currencies">
 
       <aside>
-        <section id="{{currency.Cur_ID}}" (click)="getRate(currency.Cur_ID)" *ngFor="let currency of currencyView.currencies">
-          <span>{{currency.Cur_Abbreviation}}</span> - {{currency.Cur_QuotName_Eng}}
+        <section id="{{currency.id}}" (click)="getRate(currency.id)" *ngFor="let currency of currencyView.currencies">
+          <span>{{currency.abbreviation}}</span> - {{currency.quote}}
         </section>
       </aside>
 
@@ -15,7 +15,7 @@
 
       <div class="row" *ngIf="currencyView.rate">
         <div class="col-sm-12">
-          <h2>Rate <small>({{currencyView.rate.Date}})</small></h2>
+          <h2>Rate <small>({{currencyView.rate.date}})</small></h2>
           <div class="card">
             <div class="card-body">
               <rate-section [rate]="currencyView.rate" [isUpper]="currencyView.isUpper" [delta]="currencyView.delta"></rate-section>

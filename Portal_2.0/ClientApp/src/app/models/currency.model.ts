@@ -1,10 +1,10 @@
 export class Currency {
   constructor(
-    public Id?: number,
-    public ParentId?: number,
-    public Code?: string,
-    public Abbreviation?: string,
-    public Quote?: string,
-    public Name?: string,
+    public id?: number,
+    public parentId?: number,
+    public code?: string,
+    public abbreviation?: string,
+    public quote?: string,
+    public name?: string,
   ) { }
 }
