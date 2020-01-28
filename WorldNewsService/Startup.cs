@@ -30,6 +30,7 @@ namespace WorldNewsService
 
 			services.AddSingleton(mappingConfig.CreateMapper());
 			services.AddControllers();
+			services.AddCors();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +41,7 @@ namespace WorldNewsService
 				app.UseDeveloperExceptionPage();
 			}
 
+			app.UseCors(builder => builder.AllowAnyOrigin());
 			app.UseHttpsRedirection();
 			app.UseRouting();
 			app.UseAuthorization();

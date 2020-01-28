@@ -10,22 +10,24 @@ class BasePortalNewsComponent extends BaseNewsComponent implements IBaseNews, IB
 
   news: Object;
   title: string;
+  newsType: string;
 
   interval: any;
 
-  constructor(private dataService: INewsService, title: string) {
+  constructor(private dataService: INewsService, newsType: string, title: string) {
     super();
 
     this.title = title;
+    this.newsType = newsType;
   }
 
   ngOnInit() {
 
-    this.getAllNews();
+    this.getNews();
 
     this.interval = setInterval(() => {
 
-      this.getAllNews();
+      this.getNews();
     }, 60000);
   }
 
@@ -36,9 +38,9 @@ class BasePortalNewsComponent extends BaseNewsComponent implements IBaseNews, IB
     }
   }
 
-  getAllNews() {
+  getNews() {
 
-    this.dataService.getNews().subscribe((data: News[]) => { this.news = data; });
+    this.dataService.getNews(this.newsType).subscribe((data: News[]) => { this.news = data; });
   }
 }
 

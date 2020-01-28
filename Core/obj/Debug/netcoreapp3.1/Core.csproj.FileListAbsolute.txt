@@ -8,7 +8,6 @@ C:\My Projects\NewsPortal\NewsPortal\Core\obj\Debug\netcoreapp3.1\Core.pdb
 C:\GIT - My Projects\NewsPortal\Core\bin\Debug\netcoreapp3.1\Core.deps.json
 C:\GIT - My Projects\NewsPortal\Core\bin\Debug\netcoreapp3.1\Core.dll
 C:\GIT - My Projects\NewsPortal\Core\bin\Debug\netcoreapp3.1\Core.pdb
-C:\GIT - My Projects\NewsPortal\Core\obj\Debug\netcoreapp3.1\Core.csprojAssemblyReference.cache
 C:\GIT - My Projects\NewsPortal\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfoInputs.cache
 C:\GIT - My Projects\NewsPortal\Core\obj\Debug\netcoreapp3.1\Core.AssemblyInfo.cs
 C:\GIT - My Projects\NewsPortal\Core\obj\Debug\netcoreapp3.1\Core.dll

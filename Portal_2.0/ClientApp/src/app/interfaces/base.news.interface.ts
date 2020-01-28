@@ -2,8 +2,9 @@ interface IBaseNews {
 
   news: Object;
   title: string;
+  newsType: string;
 
-  getAllNews(): void;
+  getNews(): void;
 }
 
 export { IBaseNews }

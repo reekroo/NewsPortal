@@ -2,7 +2,7 @@ import { Observable } from "rxjs";
 
 interface INewsService {
 
-  getNews(): Observable<Object>;
+  getNews(id: string): Observable<Object>;
 }
 
 export { INewsService }

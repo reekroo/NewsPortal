@@ -4,7 +4,7 @@
 
     <div class="col-sm-3 channels">
       <aside *ngFor="let channel of worldNewsViewModel.channels">
-        <section id="{{channel.id}}" (click)="getNewsById(channel.id)">{{channel.name}}</section>
+        <section id="{{channel.id}}" (click)="getNews(channel.id)">{{channel.name}}</section>
       </aside>
     </div>
 

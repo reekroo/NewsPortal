@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 import { BaseNewsComponent } from '../../../bases/base.news.component';
 
-import { NewsService } from '../../../services/news/data.news.service';
+import { WorldNewsService } from '../../../services/news/data.world.news.service';
 
 import { News } from '../../../models/news.model';
 import { Channel } from '../../../models/channel.model';
@@ -11,47 +11,30 @@ import { WorldNewsViewModel } from '../view-models/world.news.view.model';
 @Component({
   templateUrl: './world.news.component.html',
   styleUrls: ['../../../../assets/styles/news/news.less'],
-  providers: [NewsService]
+  providers: [WorldNewsService]
 })
 
 export class NewsComponent extends BaseNewsComponent implements OnInit {
 
   worldNewsViewModel: WorldNewsViewModel = new WorldNewsViewModel();
 
-  constructor(private dataService: NewsService) {
+  constructor(private dataService: WorldNewsService) {
     super();
   }
 
   ngOnInit() {
 
     this.getChannels();
-    this.getNews();
+    this.getNews('bbc-news');
   }
+  
+  getNews(id: string) {
 
-  getNews() {
+    this.dataService.getNews(id).subscribe((data: any) => {
 
-    this.dataService.getNews().subscribe((data: any) => {
+      if (data.news) {
 
-      if (data.articles) {
-
-        this.worldNewsViewModel.news = data.articles as News[];
-      } else {
-
-        this.worldNewsViewModel.news = [];
-      }
-
-      this.error();
-    });
-  }
-
-  getNewsById(id: string) {
-
-    this.dataService.getNewsById(id).subscribe(
-      response => {
-
-        if (response.hasOwnProperty("articles")) {
-
-          this.worldNewsViewModel.news = response['articles'] as News[];
+        this.worldNewsViewModel.news = data.news as News[];
         } else {
 
           this.worldNewsViewModel.news = [];
@@ -71,9 +54,9 @@ export class NewsComponent extends BaseNewsComponent implements OnInit {
 
     this.dataService.getChannels().subscribe((data: any) => {
 
-      if (data.sources) {
+      if (data.channels) {
 
-        this.worldNewsViewModel.channels = data.sources as Channel[];
+        this.worldNewsViewModel.channels = data.channels as Channel[];
       } else {
 
         this.worldNewsViewModel.channels = [];

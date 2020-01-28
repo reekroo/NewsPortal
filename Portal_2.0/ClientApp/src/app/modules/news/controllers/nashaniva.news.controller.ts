@@ -1,19 +1,20 @@
 import { Component, OnInit } from '@angular/core';
 
-import { NashaNivaNewsService } from '../../../services/news/data.news.nashaniva.service';
+import { BelarusNewsService } from '../../../services/news/data.belarus.news.service';
+import { BelarusNews } from '../../../enums/belarus.news.enum';
 
 import { BasePortalNewsComponent } from '../../../bases/base.news.portal.component';
 
 @Component({
   templateUrl: '../views/line.news.veiw.html',
   styleUrls: ['../../../../assets/styles/news/news-line-section.less'],
-  providers: [NashaNivaNewsService]
+  providers: [BelarusNewsService]
 })
 
 export class NashaNivaNewsComponent extends BasePortalNewsComponent implements OnInit {
 
-  constructor(dataService: NashaNivaNewsService) {
+  constructor(dataService: BelarusNewsService) {
 
-    super(dataService, "Nasha Niva");
+    super(dataService, BelarusNews.NashaNiva, "Nasha Niva");
   }
 }

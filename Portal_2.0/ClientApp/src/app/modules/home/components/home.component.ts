@@ -3,11 +3,7 @@ import { combineLatest } from 'rxjs';
 
 import { BankService } from '../../../services/bank/data.bank.currencies.service';
 import { RefinancingRateBankService } from '../../../services/bank/data.bank.refinancing.service';
-
-import { TutNewsService } from '../../../services/news/data.news.tut.service';
-import { OnlinerNewsService } from '../../../services/news/data.news.onliner.service';
-import { CityDogNewsService } from '../../../services/news/data.news.citydog.service';
-import { SvobodaNewsService } from '../../../services/news/data.news.svoboda.service';
+import { BelarusNewsService } from '../../../services/news/data.belarus.news.service';
 import { WeatherService } from '../../../services/weather/data.weather.service';
 
 import { RefinancingRate } from '../../../models/refinancing.rate.model';
@@ -17,13 +13,14 @@ import { Weather } from '../../../models/weather.model';
 import { HomeViewModel } from '../view-models/home.view.model';
 
 import { Currencies } from '../../../enums/currencies.enum';
+import { BelarusNews } from '../../../enums/belarus.news.enum';
 
 @Component({
   templateUrl: './home.component.html',
   styleUrls: ['../../../../assets/styles/home/home.less'],
   providers: [
     BankService, RefinancingRateBankService,
-    TutNewsService, OnlinerNewsService, CityDogNewsService, SvobodaNewsService,
+    BelarusNewsService,
     WeatherService
   ]
 })
@@ -69,10 +66,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private bank: BankService,
     private refinancingRate: RefinancingRateBankService,
-    private tut: TutNewsService,
-    private onliner: OnlinerNewsService,
-    private citydog: CityDogNewsService,
-    private svoboda: SvobodaNewsService,
+    private belarusNewsService: BelarusNewsService,
     private weather: WeatherService
   ) { }
 
@@ -104,9 +98,9 @@ export class HomeComponent implements OnInit {
 
   private getLastNews() {
 
-    this.tut.getNews().subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
-    this.onliner.getTechNews().subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
-    this.svoboda.getNews().subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
-    this.citydog.getNews().subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
+    this.belarusNewsService.getNews(BelarusNews.Tut).subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
+    this.belarusNewsService.getNews(BelarusNews.OnlinerTech).subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
+    this.belarusNewsService.getNews(BelarusNews.CityDog).subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
+    this.belarusNewsService.getNews(BelarusNews.Svoboda).subscribe((data: News[]) => { this.homeViewModel.lastBelNews.push(data[0]); });
   }
 }

@@ -59,6 +59,6 @@ namespace NewsService.Controllers
 			return NotFound();
 		}
 		
-		public async Task<ActionResult> Get() => BadRequest();
+		public async Task<ActionResult> Get() => await Get("tut");
 	}
 }
