@@ -4,19 +4,21 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { NewsRoutingModule } from './news.routing.module';
 
-import { NewsComponent } from './components/world.news.component';
-import { BelNewsComponent } from './components/belarus.news.component';
-import { OnlinerNewsComponent } from './controllers/onliner.news.controller';
-import { TutNewsComponent } from './controllers/tut.news.controller';
-import { BelarusPartisanNewsComponent } from './controllers/belaruspartisan.news.controller';
-import { NashaNivaNewsComponent } from './controllers/nashaniva.news.controller';
-import { BelsatNewsComponent } from './controllers/belsat.news.controller';
-import { SvobodaNewsComponent } from './controllers/svoboda.news.controller';
-import { CityDogNewsComponent } from './controllers/citydog.news.controller';
+import { WorldNewsComponent } from './components/world.news.component';
+import { BelarusNewsComponent } from './components/belarus.news.component';
+import { OnlinerNewsComponent } from './controllers/onliner.news.component';
+import { TutNewsComponent } from './controllers/tut.news.component';
+import { BelarusPartisanNewsComponent } from './controllers/belaruspartisan.news.component';
+import { NashaNivaNewsComponent } from './controllers/nashaniva.news.component';
+import { BelsatNewsComponent } from './controllers/belsat.news.component';
+import { SvobodaNewsComponent } from './controllers/svoboda.news.component';
+import { CityDogNewsComponent } from './controllers/citydog.news.component';
 
-import { NewsSectionComponent } from './view-sections/news.section';
-import { SpecificNewsSectionComponent } from './view-sections/news.specific.section';
-import { OnlinerNewsSectionComponent } from './view-sections/portal.news.section';
+import { NewsVerticalOrientedSection } from './view-sections/news.vertical.oriented.section';
+import { NewsHorizontalOrientedSection } from './view-sections/news.horizontal.oriented.section';
+import { NewsPortalSection } from './view-sections/news.portal.section';
+import { BelarusNewsSection } from './view-sections/belarus.news.section';
+import { BelarusSpecificNewsSection } from './view-sections/belarus.specific.news.section';
 
 @NgModule({
   imports: [
@@ -25,10 +27,11 @@ import { OnlinerNewsSectionComponent } from './view-sections/portal.news.section
   ],
   declarations: [
 
-    NewsComponent, BelNewsComponent,
+    WorldNewsComponent, BelarusNewsComponent,
     OnlinerNewsComponent, TutNewsComponent, CityDogNewsComponent,
     BelarusPartisanNewsComponent, NashaNivaNewsComponent, BelsatNewsComponent, SvobodaNewsComponent,
-    NewsSectionComponent, SpecificNewsSectionComponent, OnlinerNewsSectionComponent
+    BelarusNewsSection, BelarusSpecificNewsSection,
+    NewsVerticalOrientedSection, NewsHorizontalOrientedSection, NewsPortalSection
   ]
 })
 

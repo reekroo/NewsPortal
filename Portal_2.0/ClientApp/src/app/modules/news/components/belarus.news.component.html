@@ -2,101 +2,38 @@
 <div class="news-container container-fluid">
 
   <div class="row">
-
     <div class="col-sm-12">
-      <h2>Belsat</h2>
-
-      <div class="card">
-        <div class="card-body">
-
-          <news-section [news]="belNewsViewModel.belsatNews"></news-section>
-
-        </div>
-      </div>
+      <belarus-news-section title="Belsat" [news]="belNewsViewModel.belsatNews"></belarus-news-section>
     </div>
-
   </div>
 
   <div class="row">
-
     <div class="col-sm-4">
-      <h2>TUT</h2>
-
-      <div class="card">
-        <div class="card-body">
-
-          <news-section [news]="belNewsViewModel.tutNews"></news-section>
-
-        </div>
-      </div>
+      <belarus-news-section title="TUT" [news]="belNewsViewModel.tutNews"></belarus-news-section>
     </div>
 
     <div class="col-sm-4">
-      <h2>Onliner</h2>
-
-      <div class="card">
-        <div class="card-body">
-
-          <news-section [news]="belNewsViewModel.onlinerNews"></news-section>
-
-        </div>
-      </div>
+      <belarus-news-section title="Onliner" [news]="belNewsViewModel.onlinerNews"></belarus-news-section>
     </div>
 
     <div class="col-sm-4">
-      <h2>Radio Svoboda</h2>
-
-      <div class="card">
-        <div class="card-body">
-
-          <news-section [news]="belNewsViewModel.svobodaNews"></news-section>
-
-        </div>
-      </div>
+      <belarus-news-section title="Radio Svoboda" [news]="belNewsViewModel.svobodaNews"></belarus-news-section>
     </div>
-
   </div>
 
   <div class="row">
-
     <div class="col-sm-4">
-      <h2>Nasha Niva</h2>
-
-      <div class="card">
-        <div class="card-body">
-
-          <news-section [news]="belNewsViewModel.nashaNivaNews"></news-section>
-
-        </div>
-      </div>
+      <belarus-news-section title="Nasha Niva" [news]="belNewsViewModel.nashaNivaNews"></belarus-news-section>
     </div>
 
     <div class="col-sm-8">
-      <h2>Belarus Partisan</h2>
-
-      <div class="card">
-        <div class="card-body">
-
-          <specific-news-section [news]="belNewsViewModel.belarusPartisanNews"></specific-news-section>
-
-        </div>
-      </div>
+      <belarus-specific-news-section title="Belarus Partisan" [news]="belNewsViewModel.belarusPartisanNews"></belarus-specific-news-section>
     </div>
-
   </div>
 
   <div class="row">
-
     <div class="col-sm-12">
-      <h2>City Dog</h2>
-
-      <div class="card">
-        <div class="card-body">
-
-          <specific-news-section [news]="belNewsViewModel.cityDogNews"></specific-news-section>
-
-        </div>
-      </div>
+      <belarus-specific-news-section title="City Dog" [news]="belNewsViewModel.cityDogNews"></belarus-specific-news-section>
     </div>
   </div>
 

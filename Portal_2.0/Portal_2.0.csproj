@@ -34,6 +34,11 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\enums\belarus.news.enum.ts" />
+    <None Remove="ClientApp\src\app\modules\home\view-sections\home.currency.header.section.ts" />
+    <None Remove="ClientApp\src\app\modules\home\view-sections\home.news.section.ts" />
+    <None Remove="ClientApp\src\app\modules\home\view-sections\home.refinancing.rate.section.ts" />
+    <None Remove="ClientApp\src\app\modules\news\view-sections\belarus.news.section.ts" />
+    <None Remove="ClientApp\src\app\modules\news\view-sections\belarus.specific.news.section.ts" />
     <None Remove="ClientApp\src\app\services\news\data.belarus.news.service.ts" />
   </ItemGroup>
 

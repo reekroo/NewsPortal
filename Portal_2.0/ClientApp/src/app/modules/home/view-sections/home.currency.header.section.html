@@ -1,0 +1,9 @@
+
+<div class="row">
+  <div class="col-sm-4 currencies" *ngFor="let rate of currencyRates">
+    <h2>
+      {{rate.abbreviation}}
+      <small>{{rate.officialRate}}</small>
+    </h2>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+
+<section class="news-section" *ngFor="let n of news">
+  <article>
+    <header *ngIf="n.title">
+      <h6>
+        <a href="{{n.url}}" target="_blank" [innerHTML]="n.title"></a>
+      </h6>
+    </header>
+
+    <div class="clearfix">
+      <img src="{{n.urlToImage}}" alt="(no image)" class="rounded float-left" *ngIf="n.urlToImage" />
+
+      <p *ngIf="n.description"> {{n.description}} </p>
+    </div>
+
+    <footer *ngIf="n.publishedAt">
+      <div>{{getDate(n.publishedAt)}}</div>
+    </footer>
+  </article>
+</section>

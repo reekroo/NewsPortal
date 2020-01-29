@@ -14,7 +14,7 @@ import { WorldNewsViewModel } from '../view-models/world.news.view.model';
   providers: [WorldNewsService]
 })
 
-export class NewsComponent extends BaseNewsComponent implements OnInit {
+export class WorldNewsComponent extends BaseNewsComponent implements OnInit {
 
   worldNewsViewModel: WorldNewsViewModel = new WorldNewsViewModel();
 

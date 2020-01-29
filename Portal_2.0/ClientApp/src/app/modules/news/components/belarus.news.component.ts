@@ -12,7 +12,7 @@ import { BelarusNews } from '../../../enums/belarus.news.enum';
   providers: [BelarusNewsService]
 })
 
-export class BelNewsComponent implements OnInit {
+export class BelarusNewsComponent implements OnInit {
 
   belNewsViewModel: BelarusNewsViewModel = new BelarusNewsViewModel();
 

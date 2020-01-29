@@ -10,7 +10,7 @@
 
     <div class="col-sm-9 news">
 
-      <specific-news-section [news]="worldNewsViewModel.news"></specific-news-section>
+      <news-horizontal-oriented-section [news]="worldNewsViewModel.news"></news-horizontal-oriented-section>
 
       <div class="alert alert-warning" *ngIf="worldNewsViewModel.showError">
         <p>Sorry, news is not found for this channel</p>
